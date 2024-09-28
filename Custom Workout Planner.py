@@ -124,7 +124,7 @@ def generate_workout_plan(goal, fitness_level, days_available):
         return []
 
     # Adjust workout plan based on days available
-    if days_available < 7:
+    if days_available <= 7:
         workout_plan = workout_plan[:days_available]
         return workout_plan
     
